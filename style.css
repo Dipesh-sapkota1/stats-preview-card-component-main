@@ -115,7 +115,7 @@ body{
 }
 @media (max-width: 700px){
 	.content{
-		padding: 0 2rem;
+		padding: 1.5rem 2.5rem;
 	}
 }
 .content-wrapper .content-text{
