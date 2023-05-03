@@ -22,7 +22,7 @@
 	--fs-150: 1.5rem;
 	--fs-200: 2rem;
 }
-*{
+*,*::before,*::after{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6{
 }
 body{
 	display: grid;
-	margin: 2rem;
+	padding: 2rem;
 	place-content: center;
 	min-height: 100vh;
 	color: var(--white);
@@ -63,20 +63,12 @@ body{
 }
 .image{
 	object-fit: fill;
-	position: relative;
-	z-index: 2;
-}
-.image::before{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
 	background-color: var(--dark-violet);
-	opacity: 0.8;
 }
+.image img{
+	opacity: 0.5;
+}
+
 .container{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
